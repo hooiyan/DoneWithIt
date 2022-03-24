@@ -12,7 +12,10 @@ export default function WelcomeScreen() {
             style={styles.logo}
             source={require("../assets/favicon.png")}
           />
-          <Text style={styles.tagline}>Sell What You Don't Need</Text>
+          <Text style={styles.tagline}>
+            Sell What You Don't Need. This is my first React Native App. Here is
+            somemore text!
+          </Text>
         </View>
         <View style={styles.loginButton} />
         <View style={styles.registerButton} />
@@ -44,5 +47,10 @@ const styles = StyleSheet.create({
   },
   tagline: {
     color: "white",
+    fontStyle: "italic",
+    fontWeight: "800",
+    textTransform: "lowercase",
+    textAlign: "center",
+    paddingHorizontal: 20,
   },
 })

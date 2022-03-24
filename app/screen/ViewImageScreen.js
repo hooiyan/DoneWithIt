@@ -24,9 +24,13 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 40,
     left: 30,
+    borderRadius: 50,
+    shadowColor: "grey",
+    shadowOffset: { width: 10, height: 10 },
+    elevation: 100,
   },
   container: {
-    backgroundColor: colors.black,
+    backgroundColor: "white",
     flex: 1,
   },
   deleteIcon: {
