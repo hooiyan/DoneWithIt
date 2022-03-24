@@ -19,36 +19,40 @@ export default function App() {
   return (
     <View
       style={{
-        backgroundColor: "white",
+        backgroundColor: "black",
         display: "flex",
         flex: 1,
+        justifyContent: "space-evenly",
         height: "100%",
         width: "100%",
       }}>
       {/* <StatusBar style="auto" /> */}
+      <View
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+          paddingLeft: 20,
+          paddingRight: 20,
+        }}>
+        <View
+          style={{
+            backgroundColor: "gold",
+            height: 50,
+            width: 50,
+          }}
+        />
+        <View
+          style={{
+            backgroundColor: "pink",
+            height: 50,
+            width: 50,
+          }}
+        />
+      </View>
       <Image
         source={require("./assets/unsplash-example1.jpg")}
-        style={{ height: "100%", width: "100%", zIndex: 0 }}
-      />
-      <View
-        style={{
-          backgroundColor: "gold",
-          height: 50,
-          width: "100%",
-          zIndex: 999,
-          position: "absolute",
-          bottom: 0,
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "pink",
-          height: 50,
-          width: "100%",
-          zIndex: 999,
-          position: "absolute",
-          bottom: 50,
-        }}
+        style={{ height: "70%", width: "100%", zIndex: 0 }}
       />
     </View>
   )
